@@ -30,6 +30,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DBApp\admin.py" />
+    <Compile Include="DBApp\apps.py" />
+    <Compile Include="DBApp\migrations\__init__.py" />
+    <Compile Include="DBApp\models.py" />
+    <Compile Include="DBApp\tests.py" />
+    <Compile Include="DBApp\views.py" />
+    <Compile Include="DBApp\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="Project_Donate_Blood\__init__.py" />
     <Compile Include="Project_Donate_Blood\settings.py" />
@@ -37,9 +44,14 @@
     <Compile Include="Project_Donate_Blood\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DBApp\templates\DBApp\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="DBApp\" />
+    <Folder Include="DBApp\migrations\" />
+    <Folder Include="DBApp\templates\" />
+    <Folder Include="DBApp\templates\DBApp\" />
     <Folder Include="Project_Donate_Blood\" />
   </ItemGroup>
   <ItemGroup>
