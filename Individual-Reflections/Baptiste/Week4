@@ -2,15 +2,27 @@ Individual Reflection Week4
 
 
 What do I want to learn or understand better?
-
+This week was the real first week with a planning meeting, where we took care to take into account our mistakes from the previous week, roles were assigned and had 
+much more impact. Decision making was easier with only 2 people choosing the tasks directly, even if we consulted beforehand. We were able to reorganise our Trello
+board to be more efficient and know where we are going and what we need to do. We also started to increment the KPIs to better follow our progress. I've also started
+to increment the KPI's to better follow our progress. Also, the fact that we are starting to make deliverables and have more concrete work allows us to better 
+understand and implement the scrum method.
+What I would like to improve for the following weeks is to improve small points like better planning and not over or underestimating the work to be done to be as 
+efficient as possible and to add additional functions.
 
 
 How can I help someone else, or the entire team, to learn something new? 
-
+This week was much more collaborative with tasks that were intertwined and therefore required everyone to move forward together. For example, the design of the 
+website was done by simon and luca, which allowed them to move forward more quickly and, as no one knows htlm/css, not to be stuck alone with a problem. Another 
+example is the database and the interactive map, which are closely linked by their format. We agreed on the rules to be respected and we shared our progress in order
+to move in the same direction.
 
 
 What is my contribution towards the team’s use of Scrum?
-
+This week I took care of the interactive map part with the handling of the library folium with a first script allowing to display the map of Gothenburg as well as 
+all the points of blood donation which we counted. In a second time it was a question of incorporating the specifications which one wished such as additional information
+(hour opening, name of the site) and to make it evolutionary to be easier of use thereafter.
+For the rest, time estimation, planning and writing of the collective reflection is done together during our weekly meetings.
 
 
 
