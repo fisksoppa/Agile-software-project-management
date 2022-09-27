@@ -1,0 +1,1152 @@
+.homepagezoom1-container {
+  min-height: 100vh;
+}
+.homepagezoom1-homepagezoom1 {
+  width: 100%;
+  height: 1024px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  max-width: 1440px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 0px 0px 0px 0px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.homepagezoom1-map {
+  top: 4px;
+  left: 0px;
+  width: 1440px;
+  height: 1024px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-mapsicle-map {
+  top: -1774px;
+  left: -899px;
+  width: 5131px;
+  height: 4239px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.homepagezoom1-iconbus {
+  top: 487px;
+  left: 1058px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-ellipse1 {
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.homepagezoom1-frameicontravelbus {
+  top: 7.696638107299805px;
+  left: 9.66290283203125px;
+  width: 30.674158096313477px;
+  height: 34.550559997558594px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.homepagezoom1-vector {
+  top: 0px;
+  left: 0px;
+  width: 31px;
+  height: 35px;
+  position: absolute;
+  box-sizing: border-box;
+}
+.homepagezoom1-iconbus1 {
+  top: 403px;
+  left: 932px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-ellipse101 {
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.homepagezoom1-frameicontravelbus1 {
+  top: 7.696638107299805px;
+  left: 9.66290283203125px;
+  width: 30.674158096313477px;
+  height: 34.550559997558594px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.homepagezoom1-vector01 {
+  top: 0px;
+  left: 0px;
+  width: 31px;
+  height: 35px;
+  position: absolute;
+  box-sizing: border-box;
+}
+.homepagezoom1-iconbus2 {
+  top: 656px;
+  left: 947px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-ellipse102 {
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.homepagezoom1-frameicontravelbus2 {
+  top: 7.696638107299805px;
+  left: 9.66290283203125px;
+  width: 30.674158096313477px;
+  height: 34.550559997558594px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.homepagezoom1-vector02 {
+  top: 0px;
+  left: 0px;
+  width: 31px;
+  height: 35px;
+  position: absolute;
+  box-sizing: border-box;
+}
+.homepagezoom1-iconbloodcentral {
+  top: 529px;
+  left: 942px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-ellipse103 {
+  top: 0px;
+  left: 0.9567515254020691px;
+  width: 48px;
+  height: 50px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.homepagezoom1-frameicondropletoutline {
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.homepagezoom1-vector03 {
+  top: 6.403159141540527px;
+  left: 9.480469703674316px;
+  width: 31px;
+  height: 37px;
+  position: absolute;
+  box-sizing: border-box;
+}
+.homepagezoom1-iconbus3 {
+  top: 353px;
+  left: 1203px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-ellipse104 {
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.homepagezoom1-frameicontravelbus3 {
+  top: 7.696638107299805px;
+  left: 9.66290283203125px;
+  width: 30.674158096313477px;
+  height: 34.550559997558594px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.homepagezoom1-vector04 {
+  top: 0px;
+  left: 0px;
+  width: 31px;
+  height: 35px;
+  position: absolute;
+  box-sizing: border-box;
+}
+.homepagezoom1-listofplaces {
+  top: 16px;
+  left: 9px;
+  width: 480px;
+  height: 1000px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-rectangle2 {
+  top: 0px;
+  left: 0px;
+  width: 480px;
+  height: 1000px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 0;
+  border-radius: 44px;
+  margin-bottom: 0;
+}
+.homepagezoom1-searchbar {
+  top: 19px;
+  left: 10px;
+  width: 460px;
+  height: 57px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-rectangle1 {
+  top: 0px;
+  left: 0px;
+  width: 460px;
+  height: 57px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: rgba(0, 0, 0, 1);
+  margin-right: 0;
+  border-radius: 7px;
+  margin-bottom: 0;
+}
+.homepagezoom1-text {
+  top: 17px;
+  left: 57.66197204589844px;
+  color: rgba(196, 196, 196, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepagezoom1-rectangle21 {
+  top: 10px;
+  left: 362.16900634765625px;
+  width: 92px;
+  height: 37px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 4px;
+  margin-bottom: 0;
+}
+.homepagezoom1-text02 {
+  top: 17px;
+  left: 396.5070495605469px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Black;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 900;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepagezoom1-vector05 {
+  top: 19px;
+  left: 17.492958068847656px;
+  width: 10px;
+  height: 16px;
+  position: absolute;
+  box-sizing: border-box;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.homepagezoom1-vector06 {
+  top: 32.6500244140625px;
+  left: 26.33663558959961px;
+  width: 3px;
+  height: 4px;
+  position: absolute;
+  box-sizing: border-box;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.homepagezoom1-positionitem {
+  top: 90px;
+  left: 0px;
+  width: 480px;
+  height: 190px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-frame {
+  top: 10.786026000976562px;
+  left: 13.654267311096191px;
+  width: 451px;
+  height: 168px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 42px;
+  margin-bottom: 0;
+}
+.homepagezoom1-text04 {
+  top: 20px;
+  left: 72.47264862060547px;
+  color: rgba(0, 0, 0, 1);
+  width: 300px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepagezoom1-text06 {
+  top: 77px;
+  left: 24px;
+  color: rgba(0, 0, 0, 1);
+  width: 101px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepagezoom1-icon-bloodcentral1 {
+  top: 20px;
+  left: 371.8161926269531px;
+  width: 37px;
+  height: 35px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-ellipse105 {
+  top: 0px;
+  left: 0.7034322023391724px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.homepagezoom1-frameicondropletoutline1 {
+  top: 0px;
+  left: 0px;
+  width: 36.76148986816406px;
+  height: 35px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.homepagezoom1-vector07 {
+  top: 4.482211589813232px;
+  left: 6.9703240394592285px;
+  width: 23px;
+  height: 26px;
+  position: absolute;
+  box-sizing: border-box;
+}
+.homepagezoom1-text08 {
+  top: 124px;
+  left: 24.157548904418945px;
+  color: rgba(0, 0, 0, 1);
+  width: 286px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepagezoom1-positionitem1 {
+  top: 270px;
+  left: 0px;
+  width: 480px;
+  height: 190px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-frame1 {
+  top: 10.786026000976562px;
+  left: 13.654267311096191px;
+  width: 451px;
+  height: 168px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 42px;
+  margin-bottom: 0;
+}
+.homepagezoom1-text10 {
+  top: 20px;
+  left: 72.47264862060547px;
+  color: rgba(0, 0, 0, 1);
+  width: 300px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepagezoom1-text12 {
+  top: 77px;
+  left: 24px;
+  color: rgba(0, 0, 0, 1);
+  width: 101px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepagezoom1-icon-bloodcentral2 {
+  top: 20px;
+  left: 371.8161926269531px;
+  width: 37px;
+  height: 35px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-ellipse106 {
+  top: 0px;
+  left: 0.7034322023391724px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.homepagezoom1-frameicondropletoutline2 {
+  top: 0px;
+  left: 0px;
+  width: 36.76148986816406px;
+  height: 35px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.homepagezoom1-vector08 {
+  top: 4.482211589813232px;
+  left: 6.9703240394592285px;
+  width: 23px;
+  height: 26px;
+  position: absolute;
+  box-sizing: border-box;
+}
+.homepagezoom1-text14 {
+  top: 124px;
+  left: 24.157548904418945px;
+  color: rgba(0, 0, 0, 1);
+  width: 286px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepagezoom1-positionitem2 {
+  top: 450px;
+  left: 0px;
+  width: 480px;
+  height: 190px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-frame2 {
+  top: 10.786026000976562px;
+  left: 13.654267311096191px;
+  width: 451px;
+  height: 168px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 42px;
+  margin-bottom: 0;
+}
+.homepagezoom1-text16 {
+  top: 20px;
+  left: 72.47264862060547px;
+  color: rgba(0, 0, 0, 1);
+  width: 300px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepagezoom1-text18 {
+  top: 77px;
+  left: 24px;
+  color: rgba(0, 0, 0, 1);
+  width: 101px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepagezoom1-icon-bloodcentral3 {
+  top: 20px;
+  left: 371.8161926269531px;
+  width: 37px;
+  height: 35px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-ellipse107 {
+  top: 0px;
+  left: 0.7034322023391724px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.homepagezoom1-frameicondropletoutline3 {
+  top: 0px;
+  left: 0px;
+  width: 36.76148986816406px;
+  height: 35px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.homepagezoom1-vector09 {
+  top: 4.482211589813232px;
+  left: 6.9703240394592285px;
+  width: 23px;
+  height: 26px;
+  position: absolute;
+  box-sizing: border-box;
+}
+.homepagezoom1-text20 {
+  top: 124px;
+  left: 24.157548904418945px;
+  color: rgba(0, 0, 0, 1);
+  width: 286px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepagezoom1-positionitem3 {
+  top: 630px;
+  left: 0px;
+  width: 480px;
+  height: 190px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-frame3 {
+  top: 10.786026000976562px;
+  left: 13.654267311096191px;
+  width: 451px;
+  height: 168px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 42px;
+  margin-bottom: 0;
+}
+.homepagezoom1-text22 {
+  top: 20px;
+  left: 72.47264862060547px;
+  color: rgba(0, 0, 0, 1);
+  width: 300px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepagezoom1-text24 {
+  top: 77px;
+  left: 24px;
+  color: rgba(0, 0, 0, 1);
+  width: 101px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepagezoom1-icon-bloodcentral4 {
+  top: 20px;
+  left: 371.8161926269531px;
+  width: 37px;
+  height: 35px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-ellipse108 {
+  top: 0px;
+  left: 0.7034322023391724px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.homepagezoom1-frameicondropletoutline4 {
+  top: 0px;
+  left: 0px;
+  width: 36.76148986816406px;
+  height: 35px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.homepagezoom1-vector10 {
+  top: 4.482211589813232px;
+  left: 6.9703240394592285px;
+  width: 23px;
+  height: 26px;
+  position: absolute;
+  box-sizing: border-box;
+}
+.homepagezoom1-text26 {
+  top: 124px;
+  left: 24.157548904418945px;
+  color: rgba(0, 0, 0, 1);
+  width: 286px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepagezoom1-positionitem4 {
+  top: 810px;
+  left: 0px;
+  width: 480px;
+  height: 190px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-frame4 {
+  top: 10.786026000976562px;
+  left: 13.654267311096191px;
+  width: 451px;
+  height: 168px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 42px;
+  margin-bottom: 0;
+}
+.homepagezoom1-text28 {
+  top: 20px;
+  left: 72.47264862060547px;
+  color: rgba(0, 0, 0, 1);
+  width: 300px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepagezoom1-text30 {
+  top: 77px;
+  left: 24px;
+  color: rgba(0, 0, 0, 1);
+  width: 101px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.homepagezoom1-icon-bloodcentral5 {
+  top: 20px;
+  left: 371.8161926269531px;
+  width: 37px;
+  height: 35px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+}
+.homepagezoom1-ellipse109 {
+  top: 0px;
+  left: 0.7034322023391724px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  box-sizing: border-box;
+  border-color: transparent;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.homepagezoom1-frameicondropletoutline5 {
+  top: 0px;
+  left: 0px;
+  width: 36.76148986816406px;
+  height: 35px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.homepagezoom1-vector11 {
+  top: 4.482211589813232px;
+  left: 6.9703240394592285px;
+  width: 23px;
+  height: 26px;
+  position: absolute;
+  box-sizing: border-box;
+}
+.homepagezoom1-text32 {
+  top: 124px;
+  left: 24.157548904418945px;
+  color: rgba(0, 0, 0, 1);
+  width: 286px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}

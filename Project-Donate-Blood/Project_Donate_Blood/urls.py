@@ -20,14 +20,15 @@ Including another URLconf
 #from django.contrib import admin
 #from django.urls import path
 
-from django.conf.urls import include, url
+from django.conf.urls import include
+from django.urls import include, path
 import DBApp.views
 
 # Django processes URL patterns in the order they appear in the array
 # r'^$ means / which is initial page so the first page you see when you open the application
 urlpatterns = [
-    url(r'^$', DBApp.views.index, name='index'),
-    url(r'^home$', DBApp.views.index, name='home'),
+    #path('admin/', admin.site.urls),
+    path('', include('DBApp.urls'))
     # Uncomment the next line to enable the admin:
     #path('admin/', admin.site.urls)
 ]
