@@ -46,6 +46,7 @@ def test1(request):
         form = SearchForm()
     address = Search.objects.all().last()
     location = geocoder.osm(address)
+    
     lat = location.lat
     lng = location.lng
     country = 'Sweden'
