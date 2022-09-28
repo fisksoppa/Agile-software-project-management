@@ -17,8 +17,8 @@ Including another URLconf
 """
 
 # Uncomment next two lines to enable admin:
-#from django.contrib import admin
-#from django.urls import path
+from django.contrib import admin
+from django.urls import path
 
 from django.conf.urls import include
 from django.urls import include, path
@@ -27,7 +27,7 @@ import DBApp.views
 # Django processes URL patterns in the order they appear in the array
 # r'^$ means / which is initial page so the first page you see when you open the application
 urlpatterns = [
-    #path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', include('DBApp.urls'))
     # Uncomment the next line to enable the admin:
     #path('admin/', admin.site.urls)

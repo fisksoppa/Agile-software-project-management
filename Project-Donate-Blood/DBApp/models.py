@@ -1,3 +1,4 @@
+from unittest.util import _MAX_LENGTH
 from django.db import models
 import pandas as pd
 import folium
@@ -32,3 +33,12 @@ data = [['Volvo Tuve, Göteborg','Norra Stenebyvägen 5', '19 oct: 8:30 - 15:00'
         ]
 df = df.append(data) 
 df.columns = ['Place', 'Street', 'Day and Time', 'Latitude', 'Longitude', 'Clinic or bus']
+
+
+
+class Search(models.Model):
+    address = models.CharField(max_length=200, null=True)
+    date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.address
