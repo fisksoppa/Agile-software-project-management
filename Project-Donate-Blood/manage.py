@@ -9,6 +9,8 @@ Command-line utility for administrative tasks.
 import os
 import sys
 
+
+#MAIN
 if __name__ == '__main__':
     os.environ.setdefault(
         'DJANGO_SETTINGS_MODULE',

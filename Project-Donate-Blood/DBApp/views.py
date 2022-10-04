@@ -10,23 +10,26 @@ import operator
 import numpy as np
 
 #This shows what you want the index page to show.
+#This is the "homepage"
 def index(request):
     return HttpResponse("Blank Test Page for project!")
-# Create your views here.
 
 
 
+#For creating the list of df which show all results.
+#Located in the URL: ../test
 def test(request):
     df1 = df.to_html()
     
     return HttpResponse(df1)
 
 
-
+#Makes the grid view fot the map and also create the location pins
 def folium_map(request):
+    #Centers the map on Guthenburg
     map = folium.Map(location=[57.708870, 11.974560], zoom_start = 11)
 
-
+    #For making the pin for either bus or clinic and shows oppening hrs
     for index, loc_info in df.iterrows():
         if loc_info['Clinic or bus'] == 'bus':
             folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Day and Time"], max_width=170), icon = folium.Icon(color = 'red', icon = 'ambulance', prefix = 'fa'), tooltip = loc_info['Place']).add_to(map)
@@ -39,6 +42,8 @@ def folium_map(request):
     }
     return render(request, 'DBApp/map.html', context)
 
+#The URL for the mainpage
+#The URL is: ../test1
 def test1(request):
     if request.method == 'POST':
         form = SearchForm(request.POST)
@@ -54,16 +59,19 @@ def test1(request):
     lng = location.lng
     coordinates = (lat,lng)
 
+    #Handles invalid long- or latitude input
     if lat == None or lng == None:
         address.delete()
         return HttpResponse('You address input is invalid')
 
+    #Method for appending the long- and latitude
     distance = []
     for i in range(len(df)):
           distance.append([i, geodesic(coordinates, (float(df['Latitude'][i]), float(df['Longitude'][i]))).km])
 
     distance_sorted = distance
     distance_sorted = sorted(distance_sorted, key=operator.itemgetter(1))
+
     #sorted by distance in array with index, distance
     print(distance_sorted)
     test = [item[0] for item in distance_sorted]
@@ -82,14 +90,13 @@ def test1(request):
     # Create Map Object
     map = folium.Map(location=[57.708870, 11.974560], zoom_start = 11)
 
-
+    #For making the pin for either bus or clinic and shows oppening hrs
     for index, loc_info in df.iterrows():
         if loc_info['Clinic or bus'] == 'bus':
             folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Day and Time"], max_width=170), icon = folium.Icon(color = 'red', icon = 'ambulance', prefix = 'fa'), tooltip = loc_info['Place']).add_to(map)
         else:
             folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Day and Time"], max_width=170), icon = folium.Icon(color = 'red', icon = 'home', prefix = 'fa'),  tooltip = loc_info['Place']).add_to(map)
 
-    
 
     folium.Marker([lat, lng], tooltip='Click for more', popup=location.address).add_to(map)
     

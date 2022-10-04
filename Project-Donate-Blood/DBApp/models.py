@@ -4,9 +4,7 @@ import pandas as pd
 import folium
 
 
-# Create your models here.
-
-
+# All locations where costumer can give blood kept in a DataFrame[].
 df = pd.DataFrame()
 data = [['Volvo Tuve, Göteborg','Norra Stenebyvägen 5', '19 oct: 8:30 - 15:00', '57.75793077168005', '11.885288966539886', 'bus'],
         ['Hamnnplan, Öckerö','Lammholmsvägen 13' ,'28 nov: 13:30 - 18:00 <br>29 nov: 13:30 - 18:00', '57.70528881808817', '11.657308891433228', 'bus'],
@@ -35,7 +33,7 @@ df = df.append(data)
 df.columns = ['Place', 'Street', 'Day and Time', 'Latitude', 'Longitude', 'Clinic or bus']
 
 
-
+# Defines attribute and method for the search
 class Search(models.Model):
     address = models.CharField(max_length=200, null=True)
     date = models.DateTimeField(auto_now_add=True)
