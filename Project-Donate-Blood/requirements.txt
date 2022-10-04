@@ -1,0 +1,17 @@
+#Here are requirements downloads for the project: pip install -r requirements.txt
+
+#For running the app
+django==4.1.1
+
+#Make visualizing the data much easier by adding pins to the map
+folium==0.12.1.post1
+
+#Data analysis library
+pandas==1.4.4
+
+#Geocoding library for providers like Google, Bing...
+#Used to get a certain locations
+geocoder==1.38.1
+
+#Makes it easy to locate coordinates in a list
+geopy
