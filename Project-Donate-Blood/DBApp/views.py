@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import *
 from .forms import *
+from .database import *
 import pandas as pd
 import folium
 import geocoder
@@ -29,12 +30,12 @@ def folium_map(request):
     #Centers the map on Guthenburg
     map = folium.Map(location=[57.708870, 11.974560], zoom_start = 11)
 
-    #For making the pin for either bus or clinic and shows oppening hrs
+    #For making the pin for either Bus or Clinic and shows oppening hrs
     for index, loc_info in df.iterrows():
-        if loc_info['Clinic or bus'] == 'bus':
-            folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Day and Time"], max_width=170), icon = folium.Icon(color = 'red', icon = 'ambulance', prefix = 'fa'), tooltip = loc_info['Place']).add_to(map)
+        if loc_info['Clinic or Bus'] == 'Bus':
+            folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Opening Hours"], max_width=170), icon = folium.Icon(color = 'red', icon = 'ambulance', prefix = 'fa'), tooltip = loc_info['Place']).add_to(map)
         else:
-            folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Day and Time"], max_width=170), icon = folium.Icon(color = 'red', icon = 'home', prefix = 'fa'),  tooltip = loc_info['Place']).add_to(map)
+            folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Opening Hours"], max_width=170), icon = folium.Icon(color = 'red', icon = 'home', prefix = 'fa'),  tooltip = loc_info['Place']).add_to(map)
 
     map = map._repr_html_()
     context = {
@@ -71,10 +72,19 @@ def test1(request):
 
     distance_sorted = distance
     distance_sorted = sorted(distance_sorted, key=operator.itemgetter(1))
+    index_sorted = distance_sorted[0:5]
+    
+    print('index_sorted')
+    print(index_sorted)
+    print('index_sorted')
+    index_sorted = sorted(index_sorted, key=operator.itemgetter(0))
+    print(index_sorted)
 
     #sorted by distance in array with index, distance
     print(distance_sorted)
     test = [item[0] for item in distance_sorted]
+    testdistance = [item[1] for item in index_sorted]
+    testdistance1 = testdistance[0:5]
     #just the indexes
     print(test)
 
@@ -84,18 +94,24 @@ def test1(request):
 
     df_2 = df.iloc[df.index.isin(test_take)]
     #new df with info from original df of the 5 closest places
+  
     print(df_2)
+    df_3 = df_2.drop(['Latitude','Longitude'],axis=1)
+    df_3['Distance (km)']=testdistance1
+    df_3 = df_3.sort_values('Distance (km)')
+    print(df_3)
+ 
     #convert df to html so i can show it on the webpage
-    df_2html = df_2.to_html()
+    df_3html = df_3.to_html(index=False)
     # Create Map Object
     map = folium.Map(location=[57.708870, 11.974560], zoom_start = 11)
 
-    #For making the pin for either bus or clinic and shows oppening hrs
+    #For making the pin for either Bus or Clinic and shows oppening hrs
     for index, loc_info in df.iterrows():
-        if loc_info['Clinic or bus'] == 'bus':
-            folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Day and Time"], max_width=170), icon = folium.Icon(color = 'red', icon = 'ambulance', prefix = 'fa'), tooltip = loc_info['Place']).add_to(map)
+        if loc_info['Clinic or Bus'] == 'Bus':
+            folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Opening Hours"], max_width=170), icon = folium.Icon(color = 'red', icon = 'ambulance', prefix = 'fa'), tooltip = loc_info['Place']).add_to(map)
         else:
-            folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Day and Time"], max_width=170), icon = folium.Icon(color = 'red', icon = 'home', prefix = 'fa'),  tooltip = loc_info['Place']).add_to(map)
+            folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Opening Hours"], max_width=170), icon = folium.Icon(color = 'red', icon = 'home', prefix = 'fa'),  tooltip = loc_info['Place']).add_to(map)
 
 
     folium.Marker([lat, lng], tooltip='Click for more', popup=location.address).add_to(map)
@@ -106,6 +122,6 @@ def test1(request):
     context = {
         'map': map,
         'form': form,
-        'list': df_2html,
+        'list': df_3html,
     }
     return render(request, 'DBApp/test.html', context)
