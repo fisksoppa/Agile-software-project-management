@@ -4,8 +4,7 @@ from .import views
 
 # The different URL paths possible
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('map/', views.folium_map, name='map'),
-    path('test/', views.test, name='test'),
-    path('test1/', views.test1, name='test1')
+    path('', views.folium_map, name='map1'),
+    path('list/', views.df_list, name='list'),
+    path('search/', views.search_result, name='search')
 ]
