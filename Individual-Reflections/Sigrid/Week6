@@ -1,1 +1,24 @@
+Individual reflection Week 6 - Sígrid Vila
 
+The supervision with the TA this week also went very well. We're are almost done, so this week we focused on creating a list on the web with the closest spots to donate
+blood when looking for a exact place. Though, this was work for one person as it is impissible for all of us to work on the same task so we decided to also improve our KPIs
+and try to make sense of them and to clean the code and add comments so it's easier to understand. This week I was the PO and I helped decide in what tasks to focus on,
+which are the previously mentioned. As we had only one big task, this week we finished the spring 2 days before.
+
+For this next week's sprint my task is to implement the customer satisfaction KPI and review someone elses code to ensure it's perfect. This last sprint went well and now
+our web has an interactive map, a search bar and when you look for a place you get a list with the 5 closest places to donate blood with some information.
+
+What I want to understand better: this week I did't have a lot of work for myself as we are facing the end of the project and we are doing last touches. From last week
+I wanted to imprive Git and Djanbo skills, for the reason above I didn't improve but as my task for this week is to review someone's code, I think it will be good for me
+as I'll see how the other's program and maybe learn some things, so that's my purpose for next week.
+
+How can I help the other team mates learn something new: I say the same as last week, my knowledge in data science is hard to incorpore but I'll try to do it. Nonetheless,
+I helped some teammates with VScode and how to import a brach, with I guess it's something.
+
+What is my contribution towards the team’s use of Scrum: same as last week. I use the Trello board by assigning myself the tasks and putting them where they correspond
+(to do, done, doing...). Also now I've been PO and my taks consisted on deciding what to focus on with the tasks and it went well, we did a bit of code cleaning and 
+the implementation of the final and important task (list of places) so we are on a good place and we don't have a lot of work to do, as I mentioned, we finished before
+the sprint because we didn't have much to do and we are on schedule, so maybe the time estimation for the whole project was a bit off.
+
+What is my contribution towards the team’s deliveries: I did my task, as much as I could for the reasons mentioned above. I attended the TA meeting and participated
+and of course I contributed in the team reflection and thesprint retrospective. Same as every week.
