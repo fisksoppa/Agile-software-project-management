@@ -1,7 +1,5 @@
 import pandas as pd 
 
-
-
 # All locations where costumer can give blood kept in a DataFrame[].
 df = pd.DataFrame()
 data = [['Volvo Tuve, Göteborg','Norra Stenebyvägen 5', 'Open: 8:30 - 15:00', '57.75793077168005', '11.885288966539886', 'Bus','-'],

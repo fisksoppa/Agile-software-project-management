@@ -18,6 +18,16 @@ def df_list(request):
     return HttpResponse(df1)
 
 
+def pins_on_map(map):
+    #For making the pin for either Bus or Clinic and shows oppening hrs, For the homepage URL
+    for index, loc_info in df.iterrows():
+        if loc_info['Clinic or Bus'] == 'Bus':
+            folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Opening Hours"], max_width=170), icon = folium.Icon(color = 'red', icon = 'ambulance', prefix = 'fa'), tooltip = loc_info['Place']).add_to(map)
+        else:
+            folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Opening Hours"], max_width=170), icon = folium.Icon(color = 'red', icon = 'home', prefix = 'fa'),  tooltip = loc_info['Place']).add_to(map)
+    return map
+
+
 #Makes the grid view fot the map and also create the location pins
 def folium_map(request):
     if request.method == 'POST':
@@ -28,17 +38,11 @@ def folium_map(request):
     else:
         form = SearchForm()
 
-    #Centers the map on Guthenburg
     map = folium.Map(location=[57.708870, 11.974560], zoom_start = 11)
 
-    #For making the pin for either Bus or Clinic and shows oppening hrs
-    for index, loc_info in df.iterrows():
-        if loc_info['Clinic or Bus'] == 'Bus':
-            folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Opening Hours"], max_width=170), icon = folium.Icon(color = 'red', icon = 'ambulance', prefix = 'fa'), tooltip = loc_info['Place']).add_to(map)
-        else:
-            folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Opening Hours"], max_width=170), icon = folium.Icon(color = 'red', icon = 'home', prefix = 'fa'),  tooltip = loc_info['Place']).add_to(map)
+    # Creates the pins on the map
+    pins_on_map(map)
 
-    
     map = map._repr_html_()
     context = {
         'map':  map,
@@ -49,6 +53,7 @@ def folium_map(request):
 #The URL for the mainpage
 #The URL is: ../test1
 def search_result(request):
+
     if request.method == 'POST':
         form = SearchForm(request.POST)
         if form.is_valid():
@@ -56,6 +61,7 @@ def search_result(request):
             return redirect('search')
     else:
         form = SearchForm()
+
     address = Search.objects.all().last()
     location = geocoder.osm(str(address) + ', ' + 'gothenburg')
     
@@ -105,13 +111,9 @@ def search_result(request):
     #Centers the map on Guthenburg
     map = folium.Map(location=[57.708870, 11.974560], zoom_start = 11)
 
-    #For making the pin for either Bus or Clinic and shows oppening hrs
-    for index, loc_info in df.iterrows():
-        if loc_info['Clinic or Bus'] == 'Bus':
-            folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Opening Hours"], max_width=170), icon = folium.Icon(color = 'red', icon = 'ambulance', prefix = 'fa'), tooltip = loc_info['Place']).add_to(map)
-        else:
-            folium.Marker([loc_info["Latitude"],loc_info["Longitude"]],popup= folium.Popup(loc_info["Opening Hours"], max_width=170), icon = folium.Icon(color = 'red', icon = 'home', prefix = 'fa'),  tooltip = loc_info['Place']).add_to(map)
-
+    # Creates the pins on the map
+    pins_on_map(map)
+  
     folium.Marker([lat, lng], tooltip='Click for more', popup=location.address).add_to(map)
     
         
