@@ -26,4 +26,4 @@ data = [['Volvo Tuve, Göteborg','Norra Stenebyvägen 5', ' 8:30 - 15:00', '57.7
         ['Hulan, Lerum', 'Hulans Torg 1', '12:30 - 18:00', '57.75126419151909', '12.246686867082373', 'Bus','-'],
         ]
 df = df.append(data) 
-df.columns = ['Place', 'Street', 'Opening Hours', 'Latitude', 'Longitude', 'Clinic or Bus', 'Distance (km)']
+df.columns = ['Place', 'Address', 'Opening Hours', 'Latitude', 'Longitude', 'Clinic or Bus', 'Distance (km)']

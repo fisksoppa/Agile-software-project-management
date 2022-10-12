@@ -92,7 +92,6 @@ def search_result(request):
     testdistance = [item[1] for item in index_sorted]
     testdistance1 = testdistance[0:5]
     #just the indexes
-    
 
     test_take = test[0:5]
     #closest 5 indexes
