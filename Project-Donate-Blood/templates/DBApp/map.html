@@ -13,6 +13,7 @@
 
     <title>Search Result</title>
 </head>
+
 <style>
     .content {
         background-color: rgba(236, 72, 99, 0.527);
@@ -21,17 +22,28 @@
     }
 
     html {
-        background-color: rgba(214, 118, 155, 0.527);
+        background-color:#ffa5ab;
     }
 
     body {
-        background-color: rgba(204, 139, 164, 0.527);
+        background-color: #f9dbbd;
     }
+
+    .navbar-custom {
+        background-color: #ffa5ab;
+    }
+
+    /* Modify brand and text color */
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: black;
+        }
+
 </style>
 
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-pink">
+    <nav class="navbar navbar-custom navbar-expand-lg ">
         <a class="navbar-brand" href="http://127.0.0.1:8000/">Donate Blood</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
