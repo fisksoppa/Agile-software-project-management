@@ -8,7 +8,7 @@ import folium
 import geocoder
 from geopy.distance import geodesic
 import operator
-
+import matplotlib
 
 
 #For creating the list of df which show all results.
@@ -104,10 +104,18 @@ def search_result(request):
     df_3 = df_2.drop(['Latitude','Longitude'],axis=1)
     df_3['Distance (km)']=testdistance1
     df_3 = df_3.sort_values('Distance (km)')
+
+    df_3 = df_3.rename_axis(None)
     
+
+    #Style the dataframe
+    df_3 = df_3.style.background_gradient(axis=0, gmap=df_3['Distance (km)'], cmap='Pastel1').hide(axis='index')
+        
+
     #convert df to html so i can show it on the webpage
-    df_3html = df_3.to_html(index=False)
-   
+    
+    df_3html = df_3.to_html(index_names=False)
+  
     #Centers the map on Guthenburg
     map = folium.Map(location=[57.708870, 11.974560], zoom_start = 11)
 
