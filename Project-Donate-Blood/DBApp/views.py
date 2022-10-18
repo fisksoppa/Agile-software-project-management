@@ -1,3 +1,5 @@
+from http.client import HTTPResponse
+from pydoc import render_doc
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import *
@@ -11,12 +13,17 @@ import operator
 import matplotlib
 
 
+
 #For creating the list of df which show all results.
 #Located in the URL: ../test
 def df_list(request):
     df1 = df.to_html()
     return HttpResponse(df1)
 
+
+#Sends request to render about us page.
+def about(request):
+    return render(request, "about.html")
 
 def pins_on_map(map):
     #For making the pin for either Bus or Clinic and shows oppening hrs, For the homepage URL
@@ -95,7 +102,7 @@ def search_result(request):
   
 
     #Style the dataframe
-    df_3 = df_3.style.background_gradient(axis=0, gmap=df_3['Distance (km)'], cmap='Pastel1').hide(axis='index')
+    df_3 = df_3.style.background_gradient(axis=0, gmap=df_3['Distance (km)'], cmap='Greys').hide(axis='index')
         
 
     #convert df to html so i can show it on the webpage
