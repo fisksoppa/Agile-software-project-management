@@ -11,7 +11,8 @@ import geocoder
 from geopy.distance import geodesic
 import operator
 import matplotlib
-
+from pyroutelib3 import Router
+import webbrowser
 
 
 #For creating the list of df which show all results.
@@ -99,7 +100,26 @@ def search_result(request):
     df_2 = df.iloc[index]
     df_3 = df_2.drop(['Latitude','Longitude'],axis=1)
     df_3['Distance (km)']=distance
-  
+    
+    router = Router("car")
+    depart = router.findNode(lat, lng)
+    arrival = router.findNode(float(df['Latitude'][Five_closest_location_sorted[0][0]]), float(df['Longitude'][Five_closest_location_sorted[0][0]] ))
+
+    status, itineraire = router.doRoute(depart, arrival)
+    if status == 'success':
+        routeLatLonsCar = []
+        for elt in itineraire:
+            routeLatLonsCar.append(router.nodeLatLon(elt))
+
+    router = Router("foot")
+    depart1 = router.findNode(lat, lng)
+    arrival1 = router.findNode(float(df['Latitude'][Five_closest_location_sorted[0][0]]), float(df['Longitude'][Five_closest_location_sorted[0][0]] ))
+
+    status1, itineraire1 = router.doRoute(depart1, arrival1)
+    if status1 == 'success':
+        routeLatLonsWalk = []
+        for elt in itineraire1:
+            routeLatLonsWalk.append(router.nodeLatLon(elt))  
 
     #Style the dataframe
     df_3 = df_3.style.background_gradient(axis=0, gmap=df_3['Distance (km)'], cmap='Greys').hide(axis='index')
@@ -117,7 +137,10 @@ def search_result(request):
   
     folium.Marker([lat, lng], tooltip='Click for more', popup=location.address).add_to(map)
     
-        
+
+    folium.PolyLine(routeLatLonsCar, color='blue', weight=2.5, opacity=1).add_to(map)
+    folium.PolyLine(routeLatLonsWalk, color='black', weight=2.5, opacity=1).add_to(map) 
+
     # Get HTML Representation of Map Object
     map = map._repr_html_()
     context = {
