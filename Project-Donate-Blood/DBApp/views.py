@@ -1,3 +1,5 @@
+from http.client import HTTPResponse
+from pydoc import render_doc
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import *
@@ -8,7 +10,9 @@ import folium
 import geocoder
 from geopy.distance import geodesic
 import operator
-
+import matplotlib
+from pyroutelib3 import Router
+import webbrowser
 
 
 #For creating the list of df which show all results.
@@ -17,6 +21,10 @@ def df_list(request):
     df1 = df.to_html()
     return HttpResponse(df1)
 
+
+#Sends request to render about us page.
+def about(request):
+    return render(request, "about.html")
 
 def pins_on_map(map):
     #For making the pin for either Bus or Clinic and shows oppening hrs, For the homepage URL
@@ -65,8 +73,7 @@ def search_result(request):
     address = Search.objects.all().last()
     location = geocoder.osm(str(address) + ', ' + 'gothenburg')
     
-    lat = location.lat
-    lng = location.lng
+    lat, lng = location.lat, location.lng
     coordinates = (lat,lng)
 
     #Handles invalid long- or latitude input
@@ -79,35 +86,49 @@ def search_result(request):
     for i in range(len(df)):
           distance.append([i, geodesic(coordinates, (float(df['Latitude'][i]), float(df['Longitude'][i]))).km])
 
-    distance_sorted = distance
-    distance_sorted = sorted(distance_sorted, key=operator.itemgetter(1))
+    #Get the [index, distance] for the 5 nearest locations
+    Five_closest_location_sorted = sorted(distance, key=operator.itemgetter(1))[0:5]
+ 
     
-    index_sorted = distance_sorted[0:5]
-    index_sorted = sorted(index_sorted, key=operator.itemgetter(0))
-    
-
     #sorted by distance in array with index, distance
-    
-    test = [item[0] for item in distance_sorted]
-    testdistance = [item[1] for item in index_sorted]
-    testdistance1 = testdistance[0:5]
-    #just the indexes
+    index = [item[0] for item in Five_closest_location_sorted]
+    distance = [item[1] for item in Five_closest_location_sorted]
     
 
-    test_take = test[0:5]
-    #closest 5 indexes
-    
-
-    df_2 = df.iloc[df.index.isin(test_take)]
     #new df with info from original df of the 5 closest places
-  
-    df_3 = df_2.drop(['Latitude','Longitude'],axis=1)
-    df_3['Distance (km)']=testdistance1
-    df_3 = df_3.sort_values('Distance (km)')
     
+    df_2 = df.iloc[index]
+    df_3 = df_2.drop(['Latitude','Longitude'],axis=1)
+    df_3['Distance (km)']=distance
+    
+    router = Router("car")
+    depart = router.findNode(lat, lng)
+    arrival = router.findNode(float(df['Latitude'][Five_closest_location_sorted[0][0]]), float(df['Longitude'][Five_closest_location_sorted[0][0]] ))
+
+    status, itineraire = router.doRoute(depart, arrival)
+    if status == 'success':
+        routeLatLonsCar = []
+        for elt in itineraire:
+            routeLatLonsCar.append(router.nodeLatLon(elt))
+
+    router = Router("foot")
+    depart1 = router.findNode(lat, lng)
+    arrival1 = router.findNode(float(df['Latitude'][Five_closest_location_sorted[0][0]]), float(df['Longitude'][Five_closest_location_sorted[0][0]] ))
+
+    status1, itineraire1 = router.doRoute(depart1, arrival1)
+    if status1 == 'success':
+        routeLatLonsWalk = []
+        for elt in itineraire1:
+            routeLatLonsWalk.append(router.nodeLatLon(elt))  
+
+    #Style the dataframe
+    df_3 = df_3.style.background_gradient(axis=0, gmap=df_3['Distance (km)'], cmap='Greys').hide(axis='index')
+        
+
     #convert df to html so i can show it on the webpage
-    df_3html = df_3.to_html(index=False)
-   
+    
+    df_3html = df_3.to_html(index_names=False)
+  
     #Centers the map on Guthenburg
     map = folium.Map(location=[57.708870, 11.974560], zoom_start = 11)
 
@@ -116,7 +137,10 @@ def search_result(request):
   
     folium.Marker([lat, lng], tooltip='Click for more', popup=location.address).add_to(map)
     
-        
+
+    folium.PolyLine(routeLatLonsCar, color='blue', weight=2.5, opacity=1).add_to(map)
+    folium.PolyLine(routeLatLonsWalk, color='black', weight=2.5, opacity=1).add_to(map) 
+
     # Get HTML Representation of Map Object
     map = map._repr_html_()
     context = {
