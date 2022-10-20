@@ -73,6 +73,7 @@ def search_result(request):
     address = Search.objects.all().last()
     location = geocoder.osm(str(address) + ', ' + 'gothenburg')
     
+    #Create variable lat lng and coordinates for the location in shearch bar
     lat, lng = location.lat, location.lng
     coordinates = (lat,lng)
 
@@ -101,6 +102,9 @@ def search_result(request):
     df_3 = df_2.drop(['Latitude','Longitude'],axis=1)
     df_3['Distance (km)']=distance
     
+
+
+    #Compute the car route to the nearest point
     router = Router("car")
     depart = router.findNode(lat, lng)
     arrival = router.findNode(float(df['Latitude'][Five_closest_location_sorted[0][0]]), float(df['Longitude'][Five_closest_location_sorted[0][0]] ))
@@ -109,8 +113,11 @@ def search_result(request):
     if status == 'success':
         routeLatLonsCar = []
         for elt in itineraire:
+            #routeLatLonsCar is the list of lat lng for the car path
             routeLatLonsCar.append(router.nodeLatLon(elt))
 
+
+    #Compute the walking route to the nearest point
     router = Router("foot")
     depart1 = router.findNode(lat, lng)
     arrival1 = router.findNode(float(df['Latitude'][Five_closest_location_sorted[0][0]]), float(df['Longitude'][Five_closest_location_sorted[0][0]] ))
@@ -119,6 +126,7 @@ def search_result(request):
     if status1 == 'success':
         routeLatLonsWalk = []
         for elt in itineraire1:
+            #routeLatLonsCar is the list of lat lng for the walking path
             routeLatLonsWalk.append(router.nodeLatLon(elt))  
 
     #Style the dataframe
@@ -134,10 +142,9 @@ def search_result(request):
 
     # Creates the pins on the map
     pins_on_map(map)
-  
     folium.Marker([lat, lng], tooltip='Click for more', popup=location.address).add_to(map)
     
-
+    #Display the 2 differents paths
     folium.PolyLine(routeLatLonsCar, color='blue', weight=2.5, opacity=1).add_to(map)
     folium.PolyLine(routeLatLonsWalk, color='black', weight=2.5, opacity=1).add_to(map) 
 
