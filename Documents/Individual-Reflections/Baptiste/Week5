@@ -1,0 +1,28 @@
+Individual Reflection Week5
+
+
+What do I want to learn or understand better?
+This week was the best from an individual point of view but also from a group point of view, we put everything into practice. As well as very clear user stories that
+meet all the INVEST criteria, we could see that it was much easier for us to work at the same time in a more efficient way without losing time in the management of 
+tasks, once the tasks are defined by the PO and assigned everyone knows what he has to do. This has allowed us to make great progress on our project by providing the 
+most value to users, so we have a website with an interactive map containing the different locations and a search bar. 
+We could still improve on the estimation of the time needed to complete each task. Indeed we were faster than we thought on this sprint, so we are ahead of the backlog 
+for the next sprint.
+The areas of improvement that I would like to work on are more technical such as taking in hand github for the management of the code has several. Also continue to 
+follow all the advice of the previous weeks to continue on the right path.
+
+
+How can I help someone else, or the entire team, to learn something new? 
+Like the previous weeks, everyone is listening to each other's needs and is ready to help as much as possible. However, we try to share the tasks as well as possible 
+in areas that we know and master, or to put in team someone who knows how to do to promote learning and improve the code by avoiding errors, reducing the technical debt. 
+On my side I had to take care of the functions allowing the calculation of the distances and the classification of the localizations by distance by making sure of the 
+compatibility with the first database for the moment no problem to be announced all works perfectly.
+
+What is my contribution towards the team’s use of Scrum?
+This week I didn't have a particular role in the team, but we always plan together the tasks to be done for each sprint under the supervision of the PO. This is also 
+true for the time estimation thanks to the planning poker which even if not perfect is improving with each sprint. The major improvement of this week is the 
+implementation of KPI to help better decision making. All this organization is still mostly done through Trello with which we are becoming more and more familiar and 
+therefore efficient to plan and communicate.
+
+
+Baptiste Duchamp
