@@ -9,7 +9,8 @@ Linus Magnusson                  9           326            142           50.00 
 siiigrid                         1            30              0            3.21 ------ Sigrid
 Simon                            0             0              0               0 ------ Simon
 
-I just put a comment here because Simon has a percentage of 0 in the git inspector but he worked on the front end with the figma software. He also worked with Lucas on the same computer when writing comments in the python code, writing the html code and merging the code.
+Simon has a percentage of 0 in the git inspector but he worked on the front end with the figma software. 
+He also worked with Lucas on the same computer when writing comments in the python code, writing the html code and merging the code.
 
 Below are the number of rows from each author that have survived and are still intact in the current revision:
 
