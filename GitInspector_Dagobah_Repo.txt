@@ -11,6 +11,7 @@ Simon                            0             0              0               0 
 
 Simon has a percentage of 0 in the git inspector but he worked on the front end with the figma software. 
 He also worked with Lucas on the same computer when writing comments in the python code, writing the html code and merging the code.
+Sigrid also worked with Baptiste in the cleaning and optimization of the code, and also with Linus implementing the map.
 
 Below are the number of rows from each author that have survived and are still intact in the current revision:
 
