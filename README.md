@@ -48,7 +48,7 @@ Next in the terminal enter python manage.py runserver, this will provide a link 
 
 Done! Enjoy the website.
 
-##GitInspector
+## GitInspector
 Can be found in the gitinspector_Dagobah_repo.txt file in the repo.
 
 ## Links
