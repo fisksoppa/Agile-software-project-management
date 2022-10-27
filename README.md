@@ -47,7 +47,9 @@ From there install the requirements.txt (pip install -r requirements.txt).
 Next in the terminal enter python manage.py runserver, this will provide a link to a port that will display the website in your browser. (Default is http://127.0.0.1:8000/).
 
 Done! Enjoy the website.
-GitInspector
+
+##GitInspector
+Can be found in the gitinspector_Dagobah_repo.txt file in the repo.
 
 ## Links
 KPI spreadsheet
