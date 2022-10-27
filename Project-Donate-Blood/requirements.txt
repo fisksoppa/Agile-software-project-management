@@ -15,3 +15,9 @@ geocoder==1.38.1
 
 #Makes it easy to locate coordinates in a list
 geopy
+
+#Colorframe setter
+matplotlib
+
+#Draws the routes
+pyroutelib3
