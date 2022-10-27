@@ -1,0 +1,50 @@
+Statistical information for the repository 'Agile-software-project-management-Dagobah' was gathered on 2022/10/27.
+The following historical commit information, by author, was found:
+
+Author                     Commits    Insertions      Deletions    % of changes
+Baptistedch                      3            40             23            6.73
+FouhChainz                       8           284             27           33.23
+KleptoRogue                      2            36             28            6.84
+Linus Magnusson                  9           326            142           50.00
+siiigrid                         1            30              0            3.21
+
+Below are the number of rows from each author that have survived and are still intact in the current revision:
+
+Author                     Rows      Stability          Age       % in comments
+Baptistedch                  40          100.0          0.1               17.50
+FouhChainz                  267           94.0          0.2               18.73
+KleptoRogue                  31           86.1          0.4               51.61
+Linus Magnusson             158           48.5          0.6                5.06
+
+The following responsibilities, by author, were found in the current revision of the repository (comments are excluded
+from the line count, if possible):
+
+Baptistedch is mostly responsible for:
+    33 Project-Donate-Blood/DBApp/views.py
+
+FouhChainz is mostly responsible for:
+    91 Project-Donate-Blood/Project_Donate_Blood/settings.py
+    24 Project-Donate-Blood/Project_Donate_Blood/wsgi.py
+    23 Project-Donate-Blood/DBApp/database.py
+    21 Project-Donate-Blood/Project_Donate_Blood/urls.py
+    20 Project-Donate-Blood/manage.py
+    19 Project-Donate-Blood/DBApp/tests.py
+     8 Project-Donate-Blood/DBApp/views.py
+     5 Project-Donate-Blood/DBApp/apps.py
+     2 Project-Donate-Blood/DBApp/admin.py
+     1 Project-Donate-Blood/Project_Donate_Blood/__init__.py
+
+KleptoRogue is mostly responsible for:
+    14 Project-Donate-Blood/DBApp/views.py
+     1 Project-Donate-Blood/manage.py
+
+Linus Magnusson is mostly responsible for:
+    79 Project-Donate-Blood/DBApp/views.py
+    21 Project-Donate-Blood/DBApp/migrations/0001_initial.py
+    12 Project-Donate-Blood/DBApp/forms.py
+    10 Project-Donate-Blood/DBApp/urls.py
+     9 Project-Donate-Blood/DBApp/models.py
+     6 Project-Donate-Blood/Project_Donate_Blood/urls.py
+     5 Project-Donate-Blood/Project_Donate_Blood/settings.py
+     5 Project-Donate-Blood/DBApp/database.py
+     3 Project-Donate-Blood/DBApp/admin.py
