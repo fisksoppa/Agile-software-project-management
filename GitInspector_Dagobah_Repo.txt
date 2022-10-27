@@ -2,11 +2,11 @@ Statistical information for the repository 'Agile-software-project-management-Da
 The following historical commit information, by author, was found:
 
 Author                     Commits    Insertions      Deletions    % of changes
-Baptistedch                      3            40             23            6.73
-FouhChainz                       8           284             27           33.23
-KleptoRogue                      2            36             28            6.84
-Linus Magnusson                  9           326            142           50.00
-siiigrid                         1            30              0            3.21
+Baptistedch                      3            40             23            6.73 ------ Baptiste
+FouhChainz                       8           284             27           33.23 ------ Christian
+KleptoRogue                      2            36             28            6.84 ------ Lucas
+Linus Magnusson                  9           326            142           50.00 ------ Linus
+siiigrid                         1            30              0            3.21 ------ Sigrid
 
 Below are the number of rows from each author that have survived and are still intact in the current revision:
 
