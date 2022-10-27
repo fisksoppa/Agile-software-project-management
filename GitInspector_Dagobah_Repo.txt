@@ -7,6 +7,7 @@ FouhChainz                       8           284             27           33.23 
 KleptoRogue                      2            36             28            6.84 ------ Lucas
 Linus Magnusson                  9           326            142           50.00 ------ Linus
 siiigrid                         1            30              0            3.21 ------ Sigrid
+Simon                            0             0              0               0 ------ Simon
 
 Below are the number of rows from each author that have survived and are still intact in the current revision:
 
